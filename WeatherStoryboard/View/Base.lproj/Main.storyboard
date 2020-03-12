@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="bVY-YD-IQW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55k-2X-nKk">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -70,6 +70,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageCondition" destination="ByD-Lh-zjQ" id="yGm-Md-wnX"/>
+                        <outlet property="locationLabel" destination="jjg-4T-nIP" id="LPW-SC-8oh"/>
+                        <outlet property="temperatureLabel" destination="Ozk-oc-0BR" id="frw-yW-k3G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
