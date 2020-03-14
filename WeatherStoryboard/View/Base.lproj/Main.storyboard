@@ -35,17 +35,17 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-GS-63Z">
-                                <rect key="frame" x="20.666666666666657" y="334" width="334" height="54"/>
+                                <rect key="frame" x="20.666666666666657" y="334" width="334" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjg-4T-nIP">
-                                        <rect key="frame" x="0.0" y="0.0" width="165.33333333333334" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="147.33333333333334" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" name="Label's Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozk-oc-0BR">
-                                        <rect key="frame" x="306.33333333333331" y="0.0" width="27.666666666666686" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <rect key="frame" x="309.33333333333331" y="0.0" width="24.666666666666686" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" name="Label's Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -85,7 +85,7 @@
         <image name="Background" width="2918" height="1667"/>
         <image name="Sunny" width="847" height="847"/>
         <namedColor name="Label's Color">
-            <color red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.58099997043609619" green="0.087999999523162842" blue="0.3190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
