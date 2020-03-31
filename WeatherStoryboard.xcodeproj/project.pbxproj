@@ -22,6 +22,9 @@
 		C17B3F6F24331D960078B847 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B3F6E24331D960078B847 /* ExtensionDelegate.swift */; };
 		C17B3F7124331D970078B847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17B3F7024331D970078B847 /* Assets.xcassets */; };
 		C17B3F7524331D970078B847 /* WeatherStoryboard Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C17B3F5B24331D940078B847 /* WeatherStoryboard Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C17B3F7E243327DA0078B847 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C303C241CCDF300AD9244 /* WeatherModel.swift */; };
+		C17B3F7F243327DA0078B847 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C303E241CD9E400AD9244 /* WeatherData.swift */; };
+		C17B3F80243327DA0078B847 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BC6DBB241A55D4009CE113 /* WeatherService.swift */; };
 		C1BC6DBC241A55D4009CE113 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BC6DBB241A55D4009CE113 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
@@ -345,7 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17B3F80243327DA0078B847 /* WeatherService.swift in Sources */,
 				C17B3F6F24331D960078B847 /* ExtensionDelegate.swift in Sources */,
+				C17B3F7E243327DA0078B847 /* WeatherModel.swift in Sources */,
+				C17B3F7F243327DA0078B847 /* WeatherData.swift in Sources */,
 				C17B3F6D24331D960078B847 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

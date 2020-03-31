@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Thunderbolt.png",
+      "idiom" : "watch"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
