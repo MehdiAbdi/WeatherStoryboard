@@ -7,25 +7,63 @@
 //
 
 import WatchKit
-import Foundation
-
+import CoreLocation
 
 class InterfaceController: WKInterfaceController {
-
+    @IBOutlet weak var conditionImage: WKInterfaceImage!
+    @IBOutlet weak var temperatureLabel: WKInterfaceLabel!
+    @IBOutlet weak var locationLabel: WKInterfaceLabel!
+    
+    let locationManager = CLLocationManager()
+    var weatherService = WeatherService()
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        locationManager.delegate = self
+        weatherService.delegate = self
+        
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
     }
-    
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
+}
 
+// MARK: - CoreLocation Extension
+extension InterfaceController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            let latitude = location.coordinate.latitude
+            let longitude = location.coordinate.longitude
+            
+            weatherService.fetchBaseURLKey(lat: latitude, lon: longitude)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+}
+
+// MARK: - WeatherServiceDelegate Extension
+extension InterfaceController: WeatherServiceDelegate {
+    func didUpdateWeatherKey(_ data: WGeoPositionData) {
+        weatherService.fetchBaseURLCondition(key: data.key)
+        
+        DispatchQueue.main.async {
+            self.locationLabel.setText(data.localizedName)
+        }
+    }
+    
+    func didUpdateWeatherCondition(_ data: WCurrentConditionData) {
+        DispatchQueue.main.async {
+            
+            self.conditionImage.setImageNamed(data.imageCondition)
+            self.temperatureLabel.setText(data.temperatureInString)
+        }
+    }
+    
+    func didFaildWithError(_ error: Error) {
+        print(error)
+    }
+    
 }

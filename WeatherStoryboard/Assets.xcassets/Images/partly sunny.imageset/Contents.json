@@ -1,12 +1,21 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "filename" : "partly sunny.png"
+      "filename" : "partly sunny-1.png",
+      "idiom" : "iphone"
+    },
+    {
+      "filename" : "partly sunny-2.png",
+      "idiom" : "ipad"
+    },
+    {
+      "filename" : "partly sunny-3.png",
+      "idiom" : "ipad",
+      "subtype" : "mac-catalyst"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

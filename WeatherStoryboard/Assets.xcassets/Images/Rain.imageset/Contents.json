@@ -1,15 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "sunny-1.png",
+      "filename" : "raning-1.png",
       "idiom" : "iphone"
     },
     {
-      "filename" : "sunny-2.png",
+      "filename" : "raning-2.png",
       "idiom" : "ipad"
     },
     {
-      "filename" : "sunny-3.png",
+      "filename" : "raning-3.png",
       "idiom" : "ipad",
       "subtype" : "mac-catalyst"
     }

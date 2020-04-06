@@ -1,15 +1,39 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WeatherStoryboard_Watch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" id="s1V-jJ-7oK">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="0" id="bFw-7Y-xax">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                </label>
+                                <imageView width="80" height="80" alignment="right" verticalAlignment="center" image="Snow" id="TLb-EE-HGe"/>
+                            </items>
+                        </group>
+                        <label alignment="center" verticalAlignment="bottom" text="Location" id="x9G-PK-4Tz">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="conditionImage" destination="TLb-EE-HGe" id="3DM-lK-PwF"/>
+                        <outlet property="locationLabel" destination="x9G-PK-4Tz" id="a54-aX-yl9"/>
+                        <outlet property="temperatureLabel" destination="bFw-7Y-xax" id="gnM-8r-vBd"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="34" y="31"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Snow" width="196" height="196"/>
+    </resources>
 </document>
